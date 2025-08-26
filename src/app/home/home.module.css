@@ -1,0 +1,163 @@
+.headerContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 40px;
+}
+.logo {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #000a;
+}
+.horrorTitle {
+  font-size: 4rem;
+  font-family: 'Creepster', cursive;
+  color: #b91c1c;
+  text-shadow: 0 4px 24px #000, 0 0px 12px #b91c1c;
+  margin-bottom: 0.5rem;
+  letter-spacing: 4px;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.7rem;
+  text-shadow: 0 2px 8px #000a;
+}
+.text {
+  font-size: 1.1rem;
+  color: #e11d48;
+  opacity: 0.92;
+  margin-bottom: 0.5rem;
+  font-family: 'Montserrat', 'Creepster', cursive, sans-serif;
+  text-shadow: 0 2px 12px #000, 0 0px 8px #e11d48;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background: rgba(0,0,0,0.35);
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.7rem;
+  display: inline-block;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Creepster&display=swap');
+.button {
+  background: linear-gradient(90deg, #b91c1c 60%, #7f1d1d 100%);
+  color: #fff;
+  padding: 0.8rem 2.2rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px #000a;
+  transition: background 0.2s, transform 0.2s;
+  border: none;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  letter-spacing: 1px;
+}
+.button:hover {
+  background: linear-gradient(90deg, #7f1d1d 60%, #b91c1c 100%);
+  transform: scale(1.05);
+}
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #1a1a1a 60%, #3a1a1a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.header {
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  box-shadow: 0 2px 8px #000;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 40px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: #f3f4f6;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.link:hover {
+  background: #b91c1c;
+  color: #fff;
+}
+
+.card {
+  margin-top: 48px;
+  width: 100%;
+  max-width: 500px;
+  min-height: 340px;
+  background: url('/image/personagem.jpg') center center no-repeat;
+  background-size: cover;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px #000a, 0 2px 8px #b91c1c44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  backdrop-filter: blur(2px);
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px #b91c1c88, 0 2px 8px #000a;
+}
+
+
+.cardContent {
+  background: rgba(0,0,0,0.65);
+  border-radius: 1rem;
+  padding: 40px 32px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.7rem;
+  color: #b91c1c;
+  letter-spacing: 1px;
+}
+.text {
+  font-size: 1.1rem;
+  color: #f3f4f6;
+  opacity: 0.95;
+  margin-bottom: 0.5rem;
+}
+

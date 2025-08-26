@@ -129,6 +129,37 @@
   justify-content: center;
   transition: transform 0.2s, box-shadow 0.2s;
   backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 2rem;
+  gap: 0;
+}
+.leftSide {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rightSide {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.text {
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 12px #000a;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 270px;
+  margin-top: 2rem;
 }
 .card:hover {
   transform: scale(1.03);

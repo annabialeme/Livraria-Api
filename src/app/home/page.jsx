@@ -2,7 +2,6 @@ import styles from './home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.bgParticles}>
       <div className={styles.container}>
         <header className={styles.header}>
           <div className={styles.headerContent}>
@@ -16,12 +15,13 @@ export default function Home() {
           </div>
         </header>
         <div className={styles.card}>
-          <div className={styles.leftContent}>
             <h1 className={styles.horrorTitle}>HORROR</h1>
-            <p className={styles.text}>Livros de terror para quem gosta de emoção e mistério.</p>
+            <p className={styles.text}>
+              Descubra livros que vão arrepiar sua mente.<br />
+              Terror, suspense e mistério em cada página.
+            </p>
           </div>
         </div>
-      </div>
-    </div>
+
   );
 }

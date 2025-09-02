@@ -12,7 +12,7 @@ export default function Home() {
           <p className={styles.info}><strong>Turma:</strong> 2TDS1</p>
           <p className={styles.info}><strong>Escola:</strong> Senai</p>
           <p className={styles.info}><strong>Nome:</strong> Anna Beatriz Leme Alves</p>
-          <p className={styles.quote}>"A persistência é o caminho do êxito." - Charles Chaplin</p>
+          <p className={styles.quote}>"O sucesso não é garantido, mas a falha é certa se você não estiver determinado" – Robert Kiyosaki.</p>
         </div>
       </div>
     </div>

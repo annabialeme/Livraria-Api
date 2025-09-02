@@ -2,26 +2,19 @@ import styles from './home.module.css';
 
 export default function Home() {
   return (
-      <div className={styles.container}>
-        <header className={styles.header}>
-          <div className={styles.headerContent}>
-            <h1 className={styles.logo}>Vox Mortis</h1>
-            <nav className={styles.nav}>
-              <ul className={styles.menu}>
-                <li><a href="/" className={styles.link}>Home</a></li>
-                <li><a href="#" className={styles.link}>Contacts</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        <div className={styles.card}>
-            <h1 className={styles.horrorTitle}>HORROR</h1>
-            <p className={styles.text}>
-              Descubra livros que vão arrepiar sua mente.<br />
-              Terror, suspense e mistério em cada página.
-            </p>
-          </div>
+    <div className={styles.container}>
+      <div className={styles.overlay}></div>
+      <div className={styles.content}>
+        <h1 className={styles.title}>Vox Mortis</h1>
+        <p className={styles.subtitle}>Livraria do Terror</p>
+        <div className={styles.studentInfo}>
+          <div className={styles.avatar}></div>
+          <p className={styles.info}><strong>Turma:</strong> 2TDS1</p>
+          <p className={styles.info}><strong>Escola:</strong> Senai</p>
+          <p className={styles.info}><strong>Nome:</strong> Anna Beatriz Leme Alves</p>
+          <p className={styles.quote}>"A persistência é o caminho do êxito." - Charles Chaplin</p>
         </div>
-
+      </div>
+    </div>
   );
 }

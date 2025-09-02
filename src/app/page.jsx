@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import axios from "axios";
-
+import { redirect } from "next/navigation";
 
 export default function Page() {
+    redirect("/home");
     const [livros, setLivros] = useState([]);
     const [loading, setLoading] = useState(false);
 

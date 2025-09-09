@@ -1,3 +1,78 @@
+.menuNav {
+  width: 100%;
+  background: #4d4c47ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0;
+  gap: 32px;
+  box-shadow: 0 4px 12px #000;
+  font-family: Impact, fantasy;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.menuTitle {
+  color: #900;
+  font-weight: bold;
+  margin-right: 32px;
+  font-size: 2.2rem;
+  text-shadow: 1px 1px 0 #222;
+}
+.menuLink {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 16px;
+  transition: color 0.2s;
+}
+.menuLink:hover {
+  color: #ff4c4c;
+}
+.background {
+  min-height: 100vh;
+  width: 100vw;
+  background: url('/image/fundo.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.card {
+  background: rgba(20, 0, 0, 0.85);
+  box-shadow: 0 8px 32px #2c0000, 0 2px 8px #000;
+  border-radius: 16px;
+  padding: 32px 24px;
+  margin: 32px auto;
+  max-width: 700px;
+  color: #ffe600;
+  text-shadow: 2px 2px 8px #2c0000;
+}
+.title {
+  font-size: 3rem;
+  color: #ff4c4c;
+  text-shadow: 3px 3px 12px #2c0000, 0 0 8px #000;
+  font-family: 'Impact', fantasy;
+  margin-bottom: 12px;
+}
+.btn {
+  background: #2c0000;
+  color: #ffe600;
+  border: 2px solid #ff4c4c;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 18px 0;
+  box-shadow: 0 2px 8px #2c0000;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.btn:hover {
+  background: #ff4c4c;
+  color: #2c0000;
+}
 
 .footerCustom {
   width: 100%;
@@ -9,10 +84,14 @@
   font-size: 1.1rem;
   letter-spacing: 1px;
   box-shadow: 0 -2px 12px #000;
+  display: flex;
+  justify-content: center;
 }
 .footerContent {
-  max-width: 900px;
+  max-width: 700px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 24px;
 }
 .footerTitle {
   margin-bottom: 12px;

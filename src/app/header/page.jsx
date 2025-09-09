@@ -5,7 +5,7 @@ import GaleriaCarrossel from './galeriaCarrossel';
 
 export default function HeaderPage() {
   return (
-    <div className={styles.container}>
+    <div className={styles.background}>
       <header style={{ background: '#111', minHeight: '480px', width: '100%', position: 'relative', textAlign: 'center', paddingBottom: '0' }}>
         <div style={{ paddingTop: '32px' }}>
           <h1 style={{ fontFamily: 'Impact, fantasy', fontSize: '6rem', color: '#fff', letterSpacing: '4px', marginBottom: '0', textShadow: '2px 2px 0 #900, 0 0 12px #000' }}>
@@ -20,12 +20,11 @@ export default function HeaderPage() {
           />
         </div>
       </header>
-      <div style={{ width: '100%', background: '#4d4c47ff', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '18px 0', gap: '32px', boxShadow: '0 4px 12px #000', fontFamily: 'Impact, fantasy', fontSize: '2rem', letterSpacing: '2px' }}>
-        <span style={{ color: '#900', fontWeight: 'bold', marginRight: '32px', fontSize: '2.2rem', textShadow: '1px 1px 0 #222' }}>VOX MORTIS</span>
-        <Link href="/home" style={{ color: '#222', textDecoration: 'none', fontWeight: 'bold', margin: '0 16px' }}>Home</Link>
-        <Link href="/livros" style={{ color: '#222', textDecoration: 'none', fontWeight: 'bold', margin: '0 16px' }}>Livros</Link>
-        <Link href="/sobre" style={{ color: '#222', textDecoration: 'none', fontWeight: 'bold', margin: '0 16px' }}>Sobre</Link>
-        <Link href="/contato" style={{ color: '#222', textDecoration: 'none', fontWeight: 'bold', margin: '0 16px' }}>Contato</Link>
+      <div className={styles.menuNav}>
+        <span className={styles.menuTitle}>VOX MORTIS</span>
+        <Link href="/" className={styles.menuLink}>Livros</Link>
+        <Link href="/" className={styles.menuLink}>Sobre</Link>
+        <Link href="/contato" className={styles.menuLink}>Contato</Link>
       </div>
       <main className={styles.main}>
       
@@ -69,7 +68,7 @@ export default function HeaderPage() {
             <p>© 2025 Livraria do Terror | Desenvolvido por Anna Beatriz Leme Alves</p>
             <div className={styles.footerLinksCustom}>
               <a href="https://github.com/annabialeme" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="mailto:anna@email.com">E-mail</a>
+              <a href="mailto:annaleme.tds1@gmail.com">E-mail</a>
             </div>
           </div>
         </footer>

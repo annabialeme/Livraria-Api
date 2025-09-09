@@ -1,5 +1,5 @@
 .carrosselBg {
-  background: #111;
+  background: linear-gradient(135deg, #0a0a0a 70%, #2c0000 100%);
   padding: 32px 0;
   min-height: 500px;
   display: flex;
@@ -15,6 +15,10 @@
   justify-content: center;
   gap: 32px;
   width: 100%;
+  background: rgba(0,0,0,0.7);
+  border-radius: 12px;
+  box-shadow: 0 0 32px #2c0000;
+  padding: 16px 0;
 }
 
 .arrowBtn {
@@ -36,26 +40,31 @@
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 0 32px #000;
+  transition: opacity 0.5s;
+  opacity: 0.85;
 }
 
 .livroTitulo {
   width: 100%;
-  background: #ffe600;
-  color: #222;
+  background: linear-gradient(90deg, #2c0000 0%, #ffe600 100%);
+  color: #ffe600;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: center;
   margin-top: 24px;
-  padding: 12px 0;
-  letter-spacing: 1px;
+  padding: 14px 0;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px #2c0000;
+  border-bottom: 2px solid #2c0000;
 }
 
 .livroDesc {
-  color: #fff;
+  color: #ffe600;
   text-align: center;
   margin-top: 18px;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   max-width: 900px;
+  text-shadow: 2px 2px 8px #2c0000;
 }
 
 .loading {

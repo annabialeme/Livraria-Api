@@ -29,10 +29,10 @@ export default function GaleriaCarrossel() {
   }, []);
 
   function proxima() {
-    setAtual(atual + 1);
+    setAtual(atual === livros.length - 1 ? 0 : atual + 1);
   }
   function anterior() {
-    setAtual(atual - 1);
+    setAtual(atual === 0 ? livros.length - 1 : atual - 1);
   }
 
   if (livros.length === 0) {
@@ -42,18 +42,18 @@ export default function GaleriaCarrossel() {
   }
 
   return (
-      <div className={styles.carrosselBg}>
-        <div className={styles.carrosselRow}>
-          <button onClick={anterior} disabled={atual === 0} className={styles.arrowBtn}>&#8592;</button>
-          <img
-            src={livros[atual].src}
-            alt={livros[atual].nome}
-            className={styles.livroImg}
-          />
-          <button onClick={proxima} disabled={atual === livros.length - 1} className={styles.arrowBtn}>&#8594;</button>
-        </div>
-        <div className={styles.livroTitulo}>{livros[atual].nome}</div>
-        <div className={styles.livroDesc}>{livros[atual].descricao}</div>
+    <div className={styles.carrosselBg}>
+      <div className={styles.carrosselRow}>
+        <button onClick={anterior} className={styles.arrowBtn}>&#8592;</button>
+        <img
+          src={livros[atual].src}
+          alt={livros[atual].nome}
+          className={styles.livroImg}
+        />
+        <button onClick={proxima} className={styles.arrowBtn}>&#8594;</button>
       </div>
+      <div className={styles.livroTitulo}>{livros[atual].nome}</div>
+      <div className={styles.livroDesc}>{livros[atual].descricao}</div>
+    </div>
   );
 }

@@ -63,13 +63,13 @@ export default function HeaderPage() {
 
 
       
-        <footer style={{ width: '100vw', background: 'rgba(0,0,0,0.85)', color: '#fff', textAlign: 'center', padding: '24px 0 16px 0', fontFamily: 'Montserrat, sans-serif', fontSize: '1.1rem', letterSpacing: '1px', boxShadow: '0 -2px 12px #000' }}>
-          <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-            <div style={{ marginBottom: '12px', fontWeight: 'bold', fontSize: '1.3rem', color: '#ff4c4c' }}>VOX MORTIS</div>
+        <footer className={styles.footerCustom}>
+          <div className={styles.footerContent}>
+            <div className={styles.footerTitle}>VOX MORTIS</div>
             <p>© 2025 Livraria do Terror | Desenvolvido por Anna Beatriz Leme Alves</p>
-            <div style={{ marginTop: '12px', display: 'flex', justifyContent: 'center', gap: '24px' }}>
-              <a href="https://github.com/annabialeme" target="_blank" rel="noopener noreferrer" style={{ color: '#ff4c4c', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.1rem' }}>GitHub</a>
-              <a href="mailto:anna@email.com" style={{ color: '#ff4c4c', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.1rem' }}>E-mail</a>
+            <div className={styles.footerLinksCustom}>
+              <a href="https://github.com/annabialeme" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="mailto:anna@email.com">E-mail</a>
             </div>
           </div>
         </footer>

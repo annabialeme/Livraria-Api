@@ -1,4 +1,38 @@
 
+.footerCustom {
+  width: 100%;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  text-align: center;
+  padding: 24px 0 16px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 -2px 12px #000;
+}
+.footerContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.footerTitle {
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #ff4c4c;
+}
+.footerLinksCustom {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.footerLinksCustom a {
+  color: #ff4c4c;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
 
 .testimonials {
   margin: 32px auto;

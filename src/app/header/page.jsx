@@ -2,6 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './headerPage.module.css';
 import GaleriaCarrossel from './galeriaCarrossel';
+import Depoimentos from './depoimentos';
+import AutoresFamosos from './autoresFamosos';
+import Newsletter from './newsletter';
+import QuizTerror from './quizTerror';
 
 export default function HeaderPage() {
   return (
@@ -33,34 +37,10 @@ export default function HeaderPage() {
           <h2 className={styles.sectionTitle}>Galeria de Capas</h2>
           <GaleriaCarrossel />
         </section>
- <section className={styles.testimonials}>
-          <h2 className={styles.sectionTitle}>Depoimentos de leitores</h2>
-          <div className={styles.testimonialList}>
-            <div className={styles.testimonial}>
-              <p>“Nunca imaginei que livros de terror fossem tão envolventes!”</p>
-              <span>- João</span>
-            </div>
-            <div className={styles.testimonial}>
-              <p>“A Livraria do Terror tem os melhores clássicos!”</p>
-              <span>- Maria</span>
-            </div>
-            <div className={styles.testimonial}>
-              <p>“Recomendo para todos que gostam de emoção!”</p>
-              <span>- Lucas</span>
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.facts}>
-          <h2 className={styles.sectionTitle}>Curiosidades</h2>
-          <ul className={styles.factsList}>
-            <li>O livro mais lido é “O Exorcista”.</li>
-            <li>Mais de 500 alunos já participaram dos eventos.</li>
-            <li>O gênero mais pedido é suspense.</li>
-          </ul>
-        </section>
-
-
+  <Depoimentos />
+  <AutoresFamosos />
+  <Newsletter />
+  <QuizTerror />
       
         <footer className={styles.footerCustom}>
           <div className={styles.footerContent}>

@@ -1,0 +1,61 @@
+.bgAutores {
+  background: linear-gradient(120deg, #1a0000 70%, #222 100%);
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo {
+  color: #c7b198;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 12px #2c0000;
+  letter-spacing: 2px;
+}
+.listaAutores {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cardAutor {
+  background: #181818;
+  border-radius: 14px;
+  box-shadow: 0 0 24px #2c0000;
+  padding: 20px 18px;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #2c0000;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.cardAutor:hover {
+  background: #2c0000;
+  box-shadow: 0 0 48px #900;
+}
+.fotoAutor {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #900;
+  margin-bottom: 10px;
+  box-shadow: 0 0 12px #2c0000;
+}
+.infoAutor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nomeAutor {
+  color: #c7b198;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+.bioAutor {
+  color: #a8a8a8;
+  font-size: 0.95rem;
+  text-align: center;
+}

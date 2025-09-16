@@ -1,0 +1,118 @@
+.bgTerror {
+  background: linear-gradient(135deg, #1a0000 70%, #222 100%);
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  box-shadow: 0 0 80px #2c0000 inset;
+}
+.titulo {
+  color: #c7b198;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 12px #2c0000;
+  letter-spacing: 2px;
+}
+.filtros {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  color: #c7b198;
+  align-items: center;
+}
+.filtroBtn {
+  background: #222;
+  color: #c7b198;
+  border: 1px solid #2c0000;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.filtroAtivo {
+  background: #2c0000;
+  color: #c7b198;
+  border: 2px solid #c7b198;
+  font-weight: bold;
+}
+.card {
+  background: linear-gradient(120deg, #222 60%, #1a0000 100%);
+  border-radius: 16px;
+  box-shadow: 0 0 32px #2c0000;
+  padding: 32px 24px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+  position: relative;
+  border: 1px solid #2c0000;
+}
+.foto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #900;
+  margin-bottom: 10px;
+  box-shadow: 0 0 12px #2c0000;
+}
+.infoLeitor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.nome {
+  color: #c7b198;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.cidade {
+  color: #a8a8a8;
+  font-size: 0.95rem;
+}
+.estrelas {
+  color: #900;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 6px #2c0000;
+}
+.texto {
+  color: #c7b198;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  text-shadow: 2px 2px 8px #2c0000;
+}
+.navegacao {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.arrowBtn {
+  background: none;
+  color: #900;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.enviarBtn {
+  background: #222;
+  color: #c7b198;
+  border: 2px solid #900;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 0 0 12px #2c0000;
+  transition: background 0.2s;
+}
+.enviarBtn:hover {
+  background: #900;
+  color: #c7b198;
+}
